@@ -1,201 +1,489 @@
-//Tue Jul 22 2025 12:24:06 GMT+0000 (Coordinated Universal Time)
+//Tue Jul 22 2025 12:27:30 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 (function () {})();
-function newpass(_0x240aa9) {
-  var _0x38dec1 = Array(),
-    _0x3ff018,
-    _0x4772f6,
-    _0x38fbfb,
-    _0x3c042f,
-    _0x196075,
-    _0x58bffe,
-    _0x5c3b58,
-    _0x136fe0,
-    _0x30c554,
-    _0x4f4f47 = 7,
-    _0x5e2ac8 = 12,
-    _0x5855ff = 17,
-    _0x454928 = 22,
-    _0x5849b8 = 5,
-    _0x393345 = 9,
-    _0x5f4ede = 14,
-    _0x57d89f = 20,
-    _0x370909 = 4,
-    _0x1280c0 = 11,
-    _0x27ca2c = 16,
-    _0x26ca5a = 23,
-    _0x1c4860 = 6,
-    _0x50ad23 = 10,
-    _0x3a1806 = 15,
-    _0xa39b30 = 21;
-  _0x240aa9 = Utf8Encode(_0x240aa9);
-  _0x38dec1 = ConvertToWordArray(_0x240aa9);
-  _0x58bffe = 1732584193;
-  _0x5c3b58 = 4023233417;
-  _0x136fe0 = 2562383102;
-  _0x30c554 = 271733878;
-  for (_0x3ff018 = 0; _0x3ff018 < _0x38dec1.length; _0x3ff018 += 16) {
-    _0x4772f6 = _0x58bffe;
-    _0x38fbfb = _0x5c3b58;
-    _0x3c042f = _0x136fe0;
-    _0x196075 = _0x30c554;
-    _0x58bffe = FF(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 0], _0x4f4f47, 3614090104);
-    _0x30c554 = FF(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 1], _0x5e2ac8, 3905402710);
-    _0x136fe0 = FF(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 2], _0x5855ff, 606105819);
-    _0x5c3b58 = FF(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 3], _0x454928, 3250441966);
-    _0x58bffe = FF(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 4], _0x4f4f47, 4118548399);
-    _0x30c554 = FF(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 5], _0x5e2ac8, 1200080426);
-    _0x136fe0 = FF(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 6], _0x5855ff, 2821735955);
-    _0x5c3b58 = FF(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 7], _0x454928, 4249261313);
-    _0x58bffe = FF(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 8], _0x4f4f47, 1770035416);
-    _0x30c554 = FF(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 9], _0x5e2ac8, 2336552879);
-    _0x136fe0 = FF(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 10], _0x5855ff, 4294925233);
-    _0x5c3b58 = FF(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 11], _0x454928, 2304563134);
-    _0x58bffe = FF(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 12], _0x4f4f47, 1804603682);
-    _0x30c554 = FF(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 13], _0x5e2ac8, 4254626195);
-    _0x136fe0 = FF(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 14], _0x5855ff, 2792965006);
-    _0x5c3b58 = FF(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 15], _0x454928, 1236535329);
-    _0x58bffe = GG(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 1], _0x5849b8, 4129170786);
-    _0x30c554 = GG(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 6], _0x393345, 3225465664);
-    _0x136fe0 = GG(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 11], _0x5f4ede, 643717713);
-    _0x5c3b58 = GG(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 0], _0x57d89f, 3921069994);
-    _0x58bffe = GG(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 5], _0x5849b8, 3593408605);
-    _0x30c554 = GG(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 10], _0x393345, 38016083);
-    _0x136fe0 = GG(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 15], _0x5f4ede, 3634488961);
-    _0x5c3b58 = GG(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 4], _0x57d89f, 3889429448);
-    _0x58bffe = GG(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 9], _0x5849b8, 568446438);
-    _0x30c554 = GG(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 14], _0x393345, 3275163606);
-    _0x136fe0 = GG(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 3], _0x5f4ede, 4107603335);
-    _0x5c3b58 = GG(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 8], _0x57d89f, 1163556077);
-    _0x58bffe = GG(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 13], _0x5849b8, 2850285829);
-    _0x30c554 = GG(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 2], _0x393345, 4243563512);
-    _0x136fe0 = GG(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 7], _0x5f4ede, 1735328473);
-    _0x5c3b58 = GG(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 12], _0x57d89f, 2368359562);
-    _0x58bffe = HH(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 5], _0x370909, 4294588738);
-    _0x30c554 = HH(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 8], _0x1280c0, 2272392833);
-    _0x136fe0 = HH(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 11], _0x27ca2c, 1839030562);
-    _0x5c3b58 = HH(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 14], _0x26ca5a, 4259657740);
-    _0x58bffe = HH(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 1], _0x370909, 2763975236);
-    _0x30c554 = HH(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 4], _0x1280c0, 1272893353);
-    _0x136fe0 = HH(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 7], _0x27ca2c, 4139469664);
-    _0x5c3b58 = HH(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 10], _0x26ca5a, 3200236656);
-    _0x58bffe = HH(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 13], _0x370909, 681279174);
-    _0x30c554 = HH(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 0], _0x1280c0, 3936430074);
-    _0x136fe0 = HH(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 3], _0x27ca2c, 3572445317);
-    _0x5c3b58 = HH(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 6], _0x26ca5a, 76029189);
-    _0x58bffe = HH(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 9], _0x370909, 3654602809);
-    _0x30c554 = HH(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 12], _0x1280c0, 3873151461);
-    _0x136fe0 = HH(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 15], _0x27ca2c, 530742520);
-    _0x5c3b58 = HH(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 2], _0x26ca5a, 3299628645);
-    _0x58bffe = II(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 0], _0x1c4860, 4096336452);
-    _0x30c554 = II(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 7], _0x50ad23, 1126891415);
-    _0x136fe0 = II(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 14], _0x3a1806, 2878612391);
-    _0x5c3b58 = II(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 5], _0xa39b30, 4237533241);
-    _0x58bffe = II(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 12], _0x1c4860, 1700485571);
-    _0x30c554 = II(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 3], _0x50ad23, 2399980690);
-    _0x136fe0 = II(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 10], _0x3a1806, 4293915773);
-    _0x5c3b58 = II(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 1], _0xa39b30, 2240044497);
-    _0x58bffe = II(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 8], _0x1c4860, 1873313359);
-    _0x30c554 = II(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 15], _0x50ad23, 4264355552);
-    _0x136fe0 = II(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 6], _0x3a1806, 2734768916);
-    _0x5c3b58 = II(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 13], _0xa39b30, 1309151649);
-    _0x58bffe = II(_0x58bffe, _0x5c3b58, _0x136fe0, _0x30c554, _0x38dec1[_0x3ff018 + 4], _0x1c4860, 4149444226);
-    _0x30c554 = II(_0x30c554, _0x58bffe, _0x5c3b58, _0x136fe0, _0x38dec1[_0x3ff018 + 11], _0x50ad23, 3174756917);
-    _0x136fe0 = II(_0x136fe0, _0x30c554, _0x58bffe, _0x5c3b58, _0x38dec1[_0x3ff018 + 2], _0x3a1806, 718787259);
-    _0x5c3b58 = II(_0x5c3b58, _0x136fe0, _0x30c554, _0x58bffe, _0x38dec1[_0x3ff018 + 9], _0xa39b30, 3951483185);
-    _0x58bffe = AddUnsigned(_0x58bffe, _0x4772f6);
-    _0x5c3b58 = AddUnsigned(_0x5c3b58, _0x38fbfb);
-    _0x136fe0 = AddUnsigned(_0x136fe0, _0x3c042f);
-    _0x30c554 = AddUnsigned(_0x30c554, _0x196075);
-  }
-  var _0x5b1163 = WordToHex(_0x58bffe) + WordToHex(_0x5c3b58) + WordToHex(_0x136fe0) + WordToHex(_0x30c554);
-  return _0x5b1163.toLowerCase();
+function timest() {
+  var _0x33223f = Date.parse(new Date()).toString();
+  _0x33223f = _0x33223f.substr(0, 10);
+  return _0x33223f;
 }
-function RotateLeft(_0x3ee0f5, _0x74f5b2) {
-  return _0x3ee0f5 << _0x74f5b2 | _0x3ee0f5 >>> 32 - _0x74f5b2;
+function httpString(_0x290a6b) {
+  var _0x281a2c = /(http|https):\/\/([\w.]+\/?)\S*/;
+  s = _0x290a6b.replace(/，/, " ");
+  s = s.match(_0x281a2c);
+  var _0x430a47 = s[0];
+  return _0x430a47;
 }
-function AddUnsigned(_0x240d11, _0x442f87) {
-  var _0x57cf82, _0x398d51, _0x49565c, _0x95eb57, _0x174dca;
-  _0x49565c = _0x240d11 & 2147483648;
-  _0x95eb57 = _0x442f87 & 2147483648;
-  _0x57cf82 = _0x240d11 & 1073741824;
-  _0x398d51 = _0x442f87 & 1073741824;
-  _0x174dca = (_0x240d11 & 1073741823) + (_0x442f87 & 1073741823);
-  if (_0x57cf82 & _0x398d51) return _0x174dca ^ 2147483648 ^ _0x49565c ^ _0x95eb57;
-  if (_0x57cf82 | _0x398d51) return _0x174dca & 1073741824 ? _0x174dca ^ 3221225472 ^ _0x49565c ^ _0x95eb57 : _0x174dca ^ 1073741824 ^ _0x49565c ^ _0x95eb57;else {
-    return _0x174dca ^ _0x49565c ^ _0x95eb57;
-  }
+function isMP4File(_0x55ec6a) {
+  var _0x5b0348 = parseSuffix(_0x55ec6a);
+  return _0x5b0348.toUpperCase() === "MP4";
 }
-function F(_0x5a53e4, _0x67c6ef, _0x5d7a5f) {
-  return _0x5a53e4 & _0x67c6ef | ~_0x5a53e4 & _0x5d7a5f;
+function parseSuffix(_0x2e4369) {
+  var _0x3dad7d = document.createElement("a");
+  _0x3dad7d.href = _0x2e4369;
+  return _0x3dad7d.pathname.split(".").pop();
 }
-function G(_0xa0752a, _0x30446f, _0x4e3811) {
-  return _0xa0752a & _0x4e3811 | _0x30446f & ~_0x4e3811;
+function isValidEmail(_0x161c57) {
+  const _0x1373a5 = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return _0x1373a5.test(_0x161c57);
 }
-function H(_0x2b4cf5, _0x42bb47, _0x3e5f79) {
-  return _0x2b4cf5 ^ _0x42bb47 ^ _0x3e5f79;
+function validatePassword(_0x48a452) {
+  const _0x518c5b = /^(?=.*[a-zA-Z])(?=.*[0-9]).{6,16}$/;
+  return _0x518c5b.test(_0x48a452);
 }
-function I(_0x3b4a49, _0x373183, _0x2e7a57) {
-  return _0x373183 ^ (_0x3b4a49 | ~_0x2e7a57);
+function isValidUser() {
+  var _0x27d7fb = Cookies.get("_j_sg"),
+    _0x4481e0 = Cookies.get("_j_ug");
+  if (_0x27d7fb && _0x4481e0) {
+    var _0x1bbf2e = JSON.parse(Base64.decode(_0x4481e0));
+    $("#personalCenter").show();
+    $("#loginAndRegister").hide();
+    $("#showUserName").html(_0x1bbf2e.username + "<span class=\"caret\"></span>");
+    $("#showUserVipTime").html("会员到期时间：" + _0x1bbf2e.viptime);
+  } else $("#loginAndRegister").show(), $("#personalCenter").hide();
 }
-function FF(_0x227241, _0x2b0920, _0x1ea1ff, _0x1c82a0, _0x13696d, _0x2dda39, _0x752064) {
-  _0x227241 = AddUnsigned(_0x227241, AddUnsigned(AddUnsigned(F(_0x2b0920, _0x1ea1ff, _0x1c82a0), _0x13696d), _0x752064));
-  return AddUnsigned(RotateLeft(_0x227241, _0x2dda39), _0x2b0920);
-}
-function GG(_0x4c3b25, _0x14afa7, _0x111550, _0x4f2963, _0x2b542f, _0x447001, _0x3149d8) {
-  _0x4c3b25 = AddUnsigned(_0x4c3b25, AddUnsigned(AddUnsigned(G(_0x14afa7, _0x111550, _0x4f2963), _0x2b542f), _0x3149d8));
-  return AddUnsigned(RotateLeft(_0x4c3b25, _0x447001), _0x14afa7);
-}
-function HH(_0x470fe4, _0x192fac, _0x5689a5, _0x119a60, _0xe1afeb, _0x14c166, _0x57d384) {
-  _0x470fe4 = AddUnsigned(_0x470fe4, AddUnsigned(AddUnsigned(H(_0x192fac, _0x5689a5, _0x119a60), _0xe1afeb), _0x57d384));
-  return AddUnsigned(RotateLeft(_0x470fe4, _0x14c166), _0x192fac);
-}
-function II(_0x155fc9, _0x586c3f, _0x19a03e, _0x110c33, _0x3641e4, _0x20c7a8, _0x113c18) {
-  _0x155fc9 = AddUnsigned(_0x155fc9, AddUnsigned(AddUnsigned(I(_0x586c3f, _0x19a03e, _0x110c33), _0x3641e4), _0x113c18));
-  return AddUnsigned(RotateLeft(_0x155fc9, _0x20c7a8), _0x586c3f);
-}
-function ConvertToWordArray(_0x4facae) {
-  var _0xcede60;
-  var _0x4242ab = _0x4facae.length;
-  var _0x1092c1 = _0x4242ab + 8;
-  var _0xe05ab4 = (_0x1092c1 - _0x1092c1 % 64) / 64;
-  var _0x17d01e = (_0xe05ab4 + 1) * 16;
-  var _0x2b0eb4 = Array(_0x17d01e - 1);
-  var _0x12243f = 0;
-  var _0x4ba9cd = 0;
-  while (_0x4ba9cd < _0x4242ab) {
-    _0xcede60 = (_0x4ba9cd - _0x4ba9cd % 4) / 4;
-    _0x12243f = _0x4ba9cd % 4 * 8;
-    _0x2b0eb4[_0xcede60] = _0x2b0eb4[_0xcede60] | _0x4facae.charCodeAt(_0x4ba9cd) << _0x12243f;
-    _0x4ba9cd++;
-  }
-  _0xcede60 = (_0x4ba9cd - _0x4ba9cd % 4) / 4;
-  _0x12243f = _0x4ba9cd % 4 * 8;
-  _0x2b0eb4[_0xcede60] = _0x2b0eb4[_0xcede60] | 128 << _0x12243f;
-  _0x2b0eb4[_0x17d01e - 2] = _0x4242ab << 3;
-  _0x2b0eb4[_0x17d01e - 1] = _0x4242ab >>> 29;
-  return _0x2b0eb4;
-}
-function WordToHex(_0x5c94a1) {
-  var _0x15adf4 = "",
-    _0x4669c5 = "",
-    _0x10e5e1,
-    _0x61a765;
-  for (_0x61a765 = 0; _0x61a765 <= 3; _0x61a765++) {
-    _0x10e5e1 = _0x5c94a1 >>> _0x61a765 * 8 & 255;
-    _0x4669c5 = "0" + _0x10e5e1.toString(16);
-    _0x15adf4 = _0x15adf4 + _0x4669c5.substr(_0x4669c5.length - 2, 2);
-  }
-  return _0x15adf4;
-}
-function Utf8Encode(_0x5ee5b4) {
-  var _0x2d1eac = "";
-  for (var _0x32bd65 = 0; _0x32bd65 < _0x5ee5b4.length; _0x32bd65++) {
+$(document).ready(function () {
+  var _0xf23872 = $("#sendVerificationCode"),
+    _0x434087 = $("#registerEmail"),
+    _0x381aef = $("#registerPassword"),
+    _0x3013fe = $("#registerPasswords"),
+    _0xff407a = $("#verificationCode"),
+    _0x103626 = $("#loginemail"),
+    _0x95b7c7 = $("#loginpassword"),
+    _0x4c2a61 = $("#reGisterSubmit");
+  _0x434087.on("input", function () {
+    _0x434087.removeClass("input-error");
+    _0x434087.val().includes("@") ? _0xf23872.prop("disabled", false) : _0xf23872.prop("disabled", true);
+  });
+  _0x381aef.on("input", function () {
+    _0x381aef.removeClass("input-error");
+  });
+  _0x3013fe.on("input", function () {
+    _0x3013fe.removeClass("input-error");
+  });
+  _0xff407a.on("input", function () {
+    _0xff407a.removeClass("input-error");
+  });
+  _0x103626.on("input", function () {
+    _0x103626.removeClass("input-error");
+  });
+  _0x95b7c7.on("input", function () {
+    _0x95b7c7.removeClass("input-error");
+  });
+  $("#currentYear").text(new Date().getFullYear());
+  app.gettoken();
+  $("#logoutSubmit").on("click", function (_0x293c42) {
+    _0x293c42.stopPropagation();
+    app.logoutSubmit();
+  });
+  $("#showUserVipTime").on("click", function (_0x23c0a0) {
+    _0x23c0a0.stopPropagation();
+  });
+  $("#payvip").on("click", function (_0x3f942e) {
+    _0x3f942e.stopPropagation();
+    $("#payModal").modal("show");
+  });
+  $("#uc_01").on("click", "li", function () {
     {
-      var _0x41b737 = _0x5ee5b4.charCodeAt(_0x32bd65);
-      if (_0x41b737 < 128) _0x2d1eac += String.fromCharCode(_0x41b737);else _0x41b737 > 127 && _0x41b737 < 2048 ? (_0x2d1eac += String.fromCharCode(_0x41b737 >> 6 | 192), _0x2d1eac += String.fromCharCode(_0x41b737 & 63 | 128)) : (_0x2d1eac += String.fromCharCode(_0x41b737 >> 12 | 224), _0x2d1eac += String.fromCharCode(_0x41b737 >> 6 & 63 | 128), _0x2d1eac += String.fromCharCode(_0x41b737 & 63 | 128));
+      $("#uc_01 li").removeClass("selected");
+      $(this).addClass("selected");
+      var _0x2e6871 = $(this).find("input").val();
+      $("#paynum").text(_0x2e6871);
+      $("#paybutton").prop("disabled", false);
+    }
+  });
+});
+var app = new Vue({
+  "el": "#app",
+  "data": {
+    "link": "",
+    "myid": "xdqf13casfb",
+    "posturl": "https://www.jiexiapi.top",
+    "source": "",
+    "video_cover": false,
+    "has_video": false,
+    "is_loading": false,
+    "ios": false,
+    "errorTip": false,
+    "isMP4File": false,
+    "requestSuccess": false,
+    "showAllSupportLink": false,
+    "showClearBtn": false,
+    "has_images": false,
+    "has_images_and_videos": false,
+    "requestResult": {
+      "video": "",
+      "videos": "",
+      "text": "",
+      "cover": "",
+      "images": ""
+    },
+    "email": "",
+    "registerPassword": "",
+    "registerPasswords": "",
+    "verificationCode": "",
+    "loginemail": "",
+    "loginpassword": "",
+    "payintervalId": null,
+    "pollingintervalId": null,
+    "pollingintervalnum": 0
+  },
+  "methods": {
+    "submit": function (_0x3e1e28) {
+      if (this.link == "") {
+        {
+          this.errorTip = "请先将视频链接粘贴到上面的输入框";
+          return;
+        }
+      }
+      var _0x45a121 = this.link.lastIndexOf("http://");
+      _0x45a121 = _0x45a121 === -1 ? this.link.lastIndexOf("https://") : _0x45a121;
+      if (_0x45a121 === -1) {
+        {
+          this.errorTip = "请输入正确的视频链接";
+          return;
+        }
+      }
+      this.link = httpString(this.link.substr(_0x45a121));
+      var _0x2ea3e5 = this.link.indexOf(" ");
+      _0x2ea3e5 !== -1 && (this.link = this.link.substring(0, _0x2ea3e5));
+      var _0x3831b4 = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z]{2,5}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g;
+      if (this.link.length < 16 || !_0x3831b4.test(this.link)) {
+        {
+          this.errorTip = "请输入正确的视频链接";
+          return;
+        }
+      }
+      this.errorTip = "";
+      if (isMP4File(this.link)) {
+        this.has_video = true;
+        this.requestResult.video = this.link;
+        return;
+      }
+      this.jiexi();
+    },
+    "jiexi": function () {
+      $(".button-btn").attr("disabled", "disabled");
+      var _0x1c142c = this;
+      _0x1c142c.cleardata();
+      _0x1c142c.is_loading = true;
+      var _0x163432 = httpString(_0x1c142c.link),
+        _0x1c3825 = newpass(timest() + _0x163432 + this.myid);
+      $.ajax({
+        "type": "POST",
+        "url": _0x1c142c.posturl + "/online/urlv1",
+        "crossDomain": true,
+        "data": {
+          "link": _0x163432,
+          "timestamp": timest(),
+          "key": _0x1c3825
+        },
+        "dataType": "json",
+        "success": function (_0x21a42d) {
+          _0x1c142c.is_loading = false;
+          $(".button-btn").attr("disabled", false);
+          if (_0x21a42d.retCode == 400) {
+            _0x1c142c.errorTip = _0x21a42d.retDesc;
+          }
+          _0x21a42d.retCode == 200 && (_0x1c142c.has_video = true, _0x1c142c.video_cover = true, _0x1c142c.requestResult.cover = _0x21a42d.data.cover, _0x1c142c.requestResult.video = _0x21a42d.data.video, _0x1c142c.requestResult.text = decodeURIComponent(_0x21a42d.data.desc));
+          if (_0x21a42d.retCode == 201) {
+            _0x1c142c.has_images = true;
+            _0x1c142c.requestResult.images = _0x21a42d.data.images;
+            _0x1c142c.requestResult.text = decodeURIComponent(_0x21a42d.data.desc);
+          }
+          _0x21a42d.retCode == 202 && (_0x1c142c.has_images_and_videos = true, _0x1c142c.requestResult.videos = _0x21a42d.data.videos, _0x1c142c.requestResult.images = _0x21a42d.data.images, _0x1c142c.requestResult.text = decodeURIComponent(_0x21a42d.data.desc));
+        },
+        "error": function (_0x3dceae) {
+          _0x1c142c.is_loading = false;
+          $(".button-btn").attr("disabled", false);
+        }
+      });
+    },
+    "cleardata": function () {
+      this.video_cover = false;
+      this.has_video = false;
+      this.is_loading = false;
+      this.errorTip = false;
+      this.isMP4File = false;
+      this.requestSuccess = false;
+      this.showAllSupportLink = false;
+      this.showClearBtn = false;
+      this.has_images = false;
+      this.requestResult.text = "";
+      this.requestResult.cover = "";
+      this.requestResult.video = "";
+    },
+    "sendVerificationCode": function (_0xc7e812) {
+      if (!isValidEmail(this.email)) {
+        $("#registerEmail").addClass("input-error");
+        return;
+      }
+      var _0x16f812 = $("#sendVerificationCode"),
+        _0x5d26a4 = $("#successModal");
+      _0x16f812.prop("disabled", true);
+      var _0xe35d04 = this,
+        _0x232ae8 = newpass(timest() + _0xe35d04.email + _0xe35d04.myid);
+      $.ajax({
+        "type": "POST",
+        "url": _0xe35d04.posturl + "/login/linesendcode",
+        "crossDomain": true,
+        "data": {
+          "email": _0xe35d04.email,
+          "timestamp": timest(),
+          "key": _0x232ae8
+        },
+        "dataType": "json",
+        "success": function (_0xd5c6d1) {
+          _0xe35d04.is_loading = false;
+          _0xd5c6d1.code == 400 && (_0x16f812.prop("disabled", false), $("#successmodaltitle").text("温馨提示"), $("#successmodalbody").html(_0xd5c6d1.content), _0x5d26a4.modal("show"));
+          if (_0xd5c6d1.code == 200) {
+            var _0x34a5f1 = 60;
+            this.innerHTML = _0x34a5f1 + "s";
+            var _0x159751 = setInterval(function () {
+              _0x34a5f1--;
+              _0x16f812.html(_0x34a5f1 + "s");
+              if (_0x34a5f1 <= 0) {
+                clearInterval(_0x159751);
+                _0x16f812.html("再次发送");
+                _0x16f812.prop("disabled", false);
+                _0x34a5f1 = 60;
+              }
+            }, 1000);
+          }
+        },
+        "error": function (_0x3d709) {
+          _0xe35d04.is_loading = false;
+          _0x16f812.prop("disabled", false);
+        }
+      });
+    },
+    "reGisterSubmit": function (_0x45063c) {
+      if (!isValidEmail(this.email)) {
+        {
+          $("#registerEmail").addClass("input-error");
+          return;
+        }
+      }
+      if (!validatePassword(this.registerPassword)) {
+        $("#registerPassword").addClass("input-error");
+        return;
+      }
+      if (!validatePassword(this.registerPasswords)) {
+        {
+          $("#registerPasswords").addClass("input-error");
+          return;
+        }
+      }
+      if (this.registerPassword != this.registerPasswords) {
+        {
+          $("#registerPasswords").addClass("input-error");
+          return;
+        }
+      }
+      if (this.verificationCode.length != 6) {
+        $("#verificationCode").addClass("input-error");
+        return;
+      }
+      var _0x27ab6d = this,
+        _0x33ce94 = newpass(timest() + _0x27ab6d.email + _0x27ab6d.myid),
+        _0x4949de = $("#reGisterSubmit"),
+        _0x57a8bc = $("#successModal");
+      _0x4949de.prop("disabled", true);
+      $.ajax({
+        "type": "POST",
+        "url": _0x27ab6d.posturl + "/login/linereg",
+        "crossDomain": true,
+        "data": {
+          "email": _0x27ab6d.email,
+          "timestamp": timest(),
+          "key": _0x33ce94,
+          "code": _0x27ab6d.verificationCode,
+          "password": _0x27ab6d.registerPassword,
+          "repassword": _0x27ab6d.registerPasswords
+        },
+        "dataType": "json",
+        "success": function (_0x17e746) {
+          {
+            if (_0x17e746.code == 400) {
+              _0x4949de.prop("disabled", false);
+              $("#successmodaltitle").text("温馨提示");
+              $("#successmodalbody").html(_0x17e746.content);
+              _0x57a8bc.modal("show");
+            }
+            if (_0x17e746.code == 200) {
+              _0x4949de.prop("disabled", false);
+              _0x27ab6d.loginemail = _0x27ab6d.email;
+              _0x27ab6d.loginpassword = _0x27ab6d.registerPassword;
+              _0x27ab6d.email = "";
+              _0x27ab6d.registerPassword = "";
+              _0x27ab6d.registerPasswords = "";
+              _0x27ab6d.verificationCode = "";
+              $("#registerModal").modal("hide");
+              $("#successmodaltitle").text("温馨提示");
+              $("#successmodalbody").html("<p>注册成功！</p>");
+              _0x57a8bc.modal("show");
+            }
+          }
+        },
+        "error": function (_0x5b10e3) {
+          _0x4949de.prop("disabled", false);
+        }
+      });
+    },
+    "loginSubmit": function (_0x2d375f) {
+      if (!isValidEmail(this.loginemail)) {
+        $("#loginemail").addClass("input-error");
+        return;
+      }
+      if (!validatePassword(this.loginpassword)) {
+        {
+          $("#loginpassword").addClass("input-error");
+          return;
+        }
+      }
+      var _0x26d511 = this,
+        _0x548999 = newpass(timest() + _0x26d511.loginemail + _0x26d511.myid),
+        _0x2f08fc = $("#loginSubmit"),
+        _0x2e6c7a = $("#successModal");
+      _0x2f08fc.prop("disabled", true);
+      $.ajax({
+        "type": "POST",
+        "url": _0x26d511.posturl + "/login/linelogin",
+        "data": {
+          "email": _0x26d511.loginemail,
+          "timestamp": timest(),
+          "key": _0x548999,
+          "password": _0x26d511.loginpassword
+        },
+        "dataType": "json",
+        "success": function (_0x10af1b) {
+          _0x10af1b.code == 400 && (_0x2f08fc.prop("disabled", false), $("#successmodaltitle").text("温馨提示"), $("#successmodalbody").html(_0x10af1b.content), _0x2e6c7a.modal("show"));
+          _0x10af1b.code == 200 && (_0x2f08fc.prop("disabled", false), $("#loginModal").modal("hide"), $("#successmodaltitle").text("温馨提示"), $("#successmodalbody").html("<p>登陆成功！</p>"), _0x2e6c7a.modal("show"), isValidUser());
+        },
+        "error": function (_0x1d51a5) {
+          _0x2f08fc.prop("disabled", false);
+        }
+      });
+    },
+    "logoutSubmit": function () {
+      var _0x3ab0d = Cookies.get("_j_sg");
+      if (_0x3ab0d) {
+        {
+          var _0x5b5b7e = Base64.decode(_0x3ab0d);
+          $.ajax({
+            "type": "POST",
+            "url": this.posturl + "/login/linelogout",
+            "crossDomain": true,
+            "data": {
+              "session": _0x5b5b7e
+            },
+            "dataType": "json",
+            "success": function (_0x1a4932) {
+              _0x1a4932.code == 200 && (Cookies.remove("_j_sg"), Cookies.remove("_j_ug"), isValidUser());
+            },
+            "error": function (_0x575571) {}
+          });
+        }
+      }
+    },
+    "paySubmit": function () {
+      var _0x3e53b6 = this;
+      _0x3e53b6.pollingintervalId && (clearInterval(_0x3e53b6.pollingintervalId), _0x3e53b6.pollingintervalnum = 0);
+      var _0x16692c = $("#payModal"),
+        _0xc4d821 = $("#ftfModal"),
+        _0x5075a2 = $("#successModal"),
+        _0xef0f7a = $("#countdown"),
+        _0x1ac77f = $("#paynum").html(),
+        _0x5e52fb = Cookies.get("_j_sg");
+      if (_0x5e52fb && _0x1ac77f != 0) {
+        var _0x14a9f8 = Base64.decode(_0x5e52fb),
+          _0x3e2c1e = timest(),
+          _0xc79a0d = newpass(_0x3e2c1e + _0x1ac77f + _0x3e53b6.myid);
+        $.ajax({
+          "type": "POST",
+          "url": _0x3e53b6.posturl + "/pay/create",
+          "crossDomain": true,
+          "data": {
+            "token": _0x14a9f8,
+            "money": _0x1ac77f,
+            "timestamp": _0x3e2c1e,
+            "key": _0xc79a0d
+          },
+          "dataType": "json",
+          "success": function (_0x49054e) {
+            {
+              if (_0x49054e.code == 200) {
+                {
+                  _0x16692c.modal("hide");
+                  $("#qrcode").html("<img src=\"" + _0x49054e.qr + "\" alt=\"支付宝二维码\" />");
+                  _0xc4d821.modal("show");
+                  var _0x144f06 = 300;
+                  _0x3e53b6.payintervalId && (clearInterval(_0x3e53b6.payintervalId), _0xef0f7a.text(_0x144f06));
+                  _0x3e53b6.payintervalId = setInterval(function () {
+                    _0x144f06--;
+                    _0xef0f7a.text(_0x144f06);
+                    if (_0x144f06 <= 0) {
+                      clearInterval(_0x3e53b6.payintervalId);
+                      _0xc4d821.modal("hide");
+                      $("#successmodaltitle").text("温馨提示");
+                      $("#successmodalbody").html("<p>支付二维码已过期,请重新生成!</p>");
+                      _0x16692c.modal("show");
+                      _0x5075a2.modal("show");
+                    }
+                  }, 1000);
+                  _0x3e53b6.pollingintervalId = setInterval(function () {
+                    _0x3e53b6.polling(_0x49054e.orderid);
+                  }, 5000);
+                }
+              } else _0x49054e.code == 300 && (Cookies.remove("_j_sg"), Cookies.remove("_j_ug"), isValidUser()), $("#successmodaltitle").text("温馨提示"), $("#successmodalbody").html(_0x49054e.content), _0x5075a2.modal("show");
+            }
+          },
+          "error": function (_0x146331) {}
+        });
+      }
+    },
+    "polling": function (_0x31fd4a) {
+      var _0xa27483 = this,
+        _0x5210fa = $("#payModal"),
+        _0x1f0de5 = $("#ftfModal"),
+        _0x2bf21a = $("#successModal");
+      _0x31fd4a != "" && $.ajax({
+        "type": "POST",
+        "url": _0xa27483.posturl + "/pay/polling",
+        "crossDomain": true,
+        "data": {
+          "orderid": _0x31fd4a
+        },
+        "dataType": "json",
+        "success": function (_0x265e1e) {
+          {
+            if (_0x265e1e.code == "200") {
+              {
+                _0x5210fa.modal("hide");
+                _0x1f0de5.modal("hide");
+                clearInterval(_0xa27483.pollingintervalId);
+                $("#successmodaltitle").text("温馨提示");
+                $("#successmodalbody").html("<p>支付成功</p>");
+                _0x2bf21a.modal("show");
+                isValidUser();
+              }
+            } else _0xa27483.pollingintervalnum++, _0xa27483.pollingintervalnum > 50 && _0xa27483.pollingintervalId && (clearInterval(_0xa27483.pollingintervalId), $("#successmodaltitle").text("温馨提示"), $("#successmodalbody").html("<p>长时间未检测到支付...</p>"), _0x2bf21a.modal("show"));
+          }
+        },
+        "error": function (_0x78818b) {}
+      });
+    },
+    "gettoken": function () {
+      $.ajax({
+        "type": "GET",
+        "url": this.posturl + "/login/linetoken",
+        "crossDomain": true,
+        "dataType": "json",
+        "success": function (_0x128c75) {
+          _0x128c75.code == "200" ? isValidUser() : (Cookies.remove("_j_sg"), Cookies.remove("_j_ug"), isValidUser());
+        },
+        "error": function (_0x40f192) {}
+      });
     }
   }
-  return _0x2d1eac;
-}
+});
